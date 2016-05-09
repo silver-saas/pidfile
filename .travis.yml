@@ -4,17 +4,16 @@ python:
 - "2.7"
 
 # The secure env variables are: GEMFURY_KEY
-# TODO: generate with `travis encrypt GEMFURY_KEY=$$REPOSITORY_KEY_VALUE`
 env:
   global:
-    - secure: "$$FILL_IN_HERE"
+   - secure: "oyCuU+pAw0Y3zwSO04jTNKFNSukz2PEMYMKWR3v5+3zZ1yUCMqQ0bmO2fxuzHBzNovL/P1UdfzLIM875YmpyAXoveVxBdC4Yn94De+ND+nnBbQGanoLjhyrv9ovkPQed8OV0mosx1F8EG4qqGCNuNXZe72bvlDuR4PF6/HukOtwdsRFNHCbHCBIpHEZltW50+yyGKtUbpbwLO7DwVPpFdofm+++HIR1r/aSXqMmuk+/tbz6mimlpVHKpg3xPEKtFIviSrb4VvG+ALnNxSanQCTbSU8NdvfUR9OYQA/tVIvKi2pcSB1df3nYPo+fqChc68MBq+aA25yxvDp8Q/kraOXIJtnlunXKvNRRHnhbezmKZ1VQrr9Ezra6Ih5jLtVqoForKPDlItrV3aBNGO9YX1Dgu57k8TALSLMMWzo7BHD6IMj210DHB906TPtUtZcVm+dRZ87Gvfrpd3aeQYSGLntNKJpPA4W3nuXg1mVQ/PDw7Nnq6HjO1ghRaEEaaj9Jw4ELv2n/GvXEmP2/+63b9+IacdFq7XnT5wehq5Nre0lEYewt8ed+toFUJbYCXYU8+VlLBByU9wVnc2xG6iaYEmTG6rFjWBWpie4LBcB3s3DHkJQ4TNAjUhEUnhzzgRfjEOQ6XlzPmhvd1l4HVUqyVvaurcadWA3MWFQ9RqFEnHeg="
 
 install: 
   - pip install coveralls
   - pip install coverage
   - pip install -r requirements.txt
 
-script: coverage run --source=$$MODULES_NAME --module unittest discover --verbose
+script: coverage run --source=pidfile --module unittest discover --verbose
 
 after_success:
   - coveralls
