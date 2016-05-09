@@ -1,6 +1,4 @@
-# Pidfile
-
-TODO: fill in build status and coverage images
+# Pidfile [![Build Status](https://travis-ci.org/silver-saas/pidfile.svg?branch=master)](https://travis-ci.org/silver-saas/pidfile) [![Coverage Status](https://coveralls.io/repos/github/silver-saas/pidfile/badge.svg?branch=master)](https://coveralls.io/github/silver-saas/pidfile?branch=master)
 
 A module for interacting with pidfiles.
 

@@ -13,7 +13,7 @@ def readme():
 
 setup(
     name='pidfile',
-    version='0.0.0',
+    version='0.0.1',
     description='A module for interacting with pidfiles',
     long_description=readme(),
     keywords='system pidfile pid process',
